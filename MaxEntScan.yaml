@@ -1,0 +1,6 @@
+python: /hwfssz6/B2C_RD_P2/USER/fangzhonghai/software/miniconda2/bin/python
+MaxEntScan_py: /hwfssz6/B2C_RD_P2/USER/fangzhonghai/software/MaxEntScan/MaxEntScan.py
+MaxEntScan_path: /hwfssz6/B2C_RD_P2/USER/fangzhonghai/software/MaxEntScan
+hg19: /hwfssz1/ST_MCHRI/CLINIC/SOFTWARES/analysis_pipeline/HPC_chip/db/aln_db/hg19/hg19_chM_male_mask.fa
+GRCh37_gff: /hwfssz6/B2C_RD_P2/USER/fangzhonghai/software/MaxEntScan/anno/MyExon.uni.gff
+
