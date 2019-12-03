@@ -61,7 +61,9 @@ fi
 def run_mes_sh(anno_dic, work_path, sample_name, project):
     for key in anno_dic.keys():
         qsub_sh = "qsub -cwd -l vf=1G,p=1 -P " + project + " " + work_path + "/" + sample_name + "_" + key + ".mes.sh"
-        os.system(qsub_sh)
+        staus = os.system(qsub_sh)
+        if staus != 0:
+            sys.exit(1)
 
 
 def wait_mes_res(anno_dic, work_path, sample_name):
