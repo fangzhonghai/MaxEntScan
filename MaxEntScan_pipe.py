@@ -15,10 +15,12 @@ def print_usage(option, opt, value, parser):
 # --------------------------------------------------------------------------------------------------------------
     MaxEntScan::score5ss for human 5' splice sites AND MaxEntScan::score3ss for human 3' splice sites
     This program Packaged the 'MaxEntScan'.
+    python MaxEntScan/MaxEntScan_pipe.py -a MaxEntScan/example/NA12878.txt -s sampleID -p /path/to/work \
+    -s sampleID -p /path/to/work --pro project_in_sge --cols "#Chr,Stop,Ref,Call"
 # --------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------
     """
-    print usage_message
+    print(usage_message)
     sys.exit()
 
 
