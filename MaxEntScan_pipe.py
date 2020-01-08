@@ -10,13 +10,14 @@ pd.options.mode.chained_assignment = None
 
 
 def print_usage(option, opt, value, parser):
-    usage_message = """
+    usage_message = r"""
 # --------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------
     MaxEntScan::score5ss for human 5' splice sites AND MaxEntScan::score3ss for human 3' splice sites
     This program Packaged the 'MaxEntScan'.
+    
     python MaxEntScan/MaxEntScan_pipe.py -a MaxEntScan/example/NA12878.txt -s sampleID -p /path/to/work \
-    -s sampleID -p /path/to/work --pro project_in_sge --cols "#Chr,Stop,Ref,Call"
+    -s sampleID --pro project_in_sge --cols "#Chr,Stop,Ref,Call"
 # --------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------
     """
